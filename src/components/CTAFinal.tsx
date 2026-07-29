@@ -5,7 +5,7 @@ import { getWhatsAppLink } from "../data";
 
 export default function CTAFinal() {
   return (
-    <section className="bg-white py-24 lg:py-32 relative overflow-hidden" id="contato">
+    <section className="bg-gradient-to-b from-brand-yellow-light/40 via-rose-50/50 to-brand-red-light/40 py-24 lg:py-32 relative overflow-hidden" id="contato">
       <div className="mx-auto max-w-5xl px-6">
         
         {/* Main CTA Box with Premium Red/Yellow Gradient styling */}

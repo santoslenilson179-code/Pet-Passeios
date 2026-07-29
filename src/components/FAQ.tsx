@@ -11,7 +11,10 @@ export default function FAQ() {
   };
 
   return (
-    <section className="bg-slate-50/50 py-24 lg:py-32 border-y border-slate-100" id="faq">
+    <section className="bg-gradient-to-b from-brand-red-light/30 via-rose-50/40 to-brand-yellow-light/40 py-24 lg:py-32 relative overflow-hidden border-y border-amber-200/40" id="faq">
+      {/* Background ambient accents */}
+      <div className="absolute top-0 left-1/3 h-96 w-96 bg-brand-red/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 right-1/3 h-96 w-96 bg-brand-yellow/20 rounded-full blur-3xl pointer-events-none" />
       <div className="mx-auto max-w-4xl px-6 space-y-16 text-left">
         
         {/* Header Title */}

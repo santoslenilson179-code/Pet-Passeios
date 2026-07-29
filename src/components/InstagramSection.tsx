@@ -4,7 +4,10 @@ import { Instagram, ExternalLink, Sparkles, Heart } from "lucide-react";
 
 export default function InstagramSection() {
   return (
-    <section className="bg-slate-50 py-20 lg:py-28" id="instagram">
+    <section className="bg-gradient-to-b from-brand-red-light/30 via-rose-50/50 to-amber-50/40 py-20 lg:py-28 relative overflow-hidden" id="instagram">
+      {/* Background ambient accents */}
+      <div className="absolute top-0 right-1/4 h-96 w-96 bg-brand-red/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 left-1/4 h-96 w-96 bg-brand-yellow/20 rounded-full blur-3xl pointer-events-none" />
       <div className="mx-auto max-w-7xl px-6 space-y-12">
         
         {/* Section Header */}

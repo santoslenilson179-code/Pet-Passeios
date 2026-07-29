@@ -26,9 +26,28 @@
   }
   body {
     font-family: var(--font-sans);
-    background-color: #FDFBFC;
+    background-color: #FFFDF9;
     color: #0F172A;
   }
+}
+
+/* Custom premium visual utility classes & colorful mesh backgrounds */
+.lp-colorful-mesh {
+  background-color: #FFFDF9;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(230, 28, 84, 0.12) 0px, transparent 50%),
+    radial-gradient(at 100% 10%, rgba(255, 200, 21, 0.18) 0px, transparent 50%),
+    radial-gradient(at 20% 50%, rgba(255, 141, 161, 0.12) 0px, transparent 50%),
+    radial-gradient(at 80% 80%, rgba(255, 200, 21, 0.15) 0px, transparent 50%),
+    radial-gradient(at 10% 90%, rgba(230, 28, 84, 0.10) 0px, transparent 50%);
+}
+
+.lp-warm-glow-red {
+  background: radial-gradient(circle, rgba(230, 28, 84, 0.15) 0%, rgba(230, 28, 84, 0) 70%);
+}
+
+.lp-warm-glow-yellow {
+  background: radial-gradient(circle, rgba(255, 200, 21, 0.25) 0%, rgba(255, 200, 21, 0) 70%);
 }
 
 /* Custom premium visual utility classes */

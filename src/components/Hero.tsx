@@ -22,10 +22,11 @@ export default function Hero({ onOpenModal }: HeroProps) {
   ];
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-brand-yellow-light/15 via-white to-brand-red-light/10 py-16 lg:py-28" id="home">
+    <section className="relative overflow-hidden bg-gradient-to-br from-brand-yellow-light/80 via-rose-50/50 to-brand-red-light/50 py-16 lg:py-28" id="home">
       {/* Decorative premium radial overlays */}
-      <div className="absolute top-0 left-0 -z-10 h-[500px] w-[500px] rounded-full bg-brand-red/5 blur-[120px] pointer-events-none" />
-      <div className="absolute right-0 bottom-0 -z-10 h-[600px] w-[600px] rounded-full bg-brand-yellow/5 blur-[150px] pointer-events-none" />
+      <div className="absolute top-0 left-0 -z-10 h-[500px] w-[500px] rounded-full bg-brand-red/15 blur-[100px] pointer-events-none" />
+      <div className="absolute right-0 bottom-0 -z-10 h-[600px] w-[600px] rounded-full bg-brand-yellow/25 blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 h-[400px] w-[400px] rounded-full bg-pink-200/20 blur-[90px] pointer-events-none" />
 
       <div className="mx-auto max-w-7xl px-6">
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">

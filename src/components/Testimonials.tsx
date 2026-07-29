@@ -5,7 +5,10 @@ import { TESTIMONIALS } from "../data";
 
 export default function Testimonials() {
   return (
-    <section className="bg-slate-50/40 py-24 lg:py-32 border-y border-slate-100" id="depoimentos">
+    <section className="bg-gradient-to-br from-brand-yellow-light/60 via-rose-50/50 to-amber-50/60 py-24 lg:py-32 relative overflow-hidden border-y border-amber-200/40" id="depoimentos">
+      {/* Background ambient accents */}
+      <div className="absolute top-1/4 left-0 h-[450px] w-[450px] bg-brand-red/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-1/4 right-0 h-[450px] w-[450px] bg-brand-yellow/20 rounded-full blur-3xl pointer-events-none" />
       <div className="mx-auto max-w-7xl px-6 space-y-16 lg:space-y-24">
         
         {/* Header Title */}

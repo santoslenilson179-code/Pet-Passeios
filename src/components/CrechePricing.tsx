@@ -25,10 +25,10 @@ export default function CrechePricing() {
   const currentPlans = activeTab === "integral" ? integralPlans : meioPeriodoPlans;
 
   return (
-    <section className="bg-white py-24 lg:py-32 relative overflow-hidden border-b border-slate-100" id="planos-creche">
+    <section className="bg-gradient-to-br from-amber-50/60 via-rose-50/40 to-brand-yellow-light/60 py-24 lg:py-32 relative overflow-hidden border-b border-amber-200/40" id="planos-creche">
       {/* Background accents */}
-      <div className="absolute top-1/2 left-0 h-96 w-96 bg-brand-red/5 rounded-full blur-3xl pointer-events-none -translate-y-1/2" />
-      <div className="absolute bottom-0 right-0 h-96 w-96 bg-brand-yellow/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-1/2 left-0 h-[500px] w-[500px] bg-brand-red/10 rounded-full blur-3xl pointer-events-none -translate-y-1/2" />
+      <div className="absolute bottom-0 right-0 h-[500px] w-[500px] bg-brand-yellow/25 rounded-full blur-3xl pointer-events-none" />
 
       <div className="mx-auto max-w-7xl px-6 relative z-10">
         

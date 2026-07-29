@@ -32,10 +32,10 @@ export default function LocationAndHours() {
   ];
 
   return (
-    <section className="bg-white py-24 lg:py-32 relative overflow-hidden border-b border-slate-100" id="localizacao">
+    <section className="bg-gradient-to-br from-amber-50/50 via-rose-50/40 to-brand-yellow-light/60 py-24 lg:py-32 relative overflow-hidden border-b border-rose-100/60" id="localizacao">
       {/* Decorative background blurs */}
-      <div className="absolute top-0 right-1/4 h-96 w-96 bg-brand-red/5 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-0 left-1/4 h-96 w-96 bg-brand-yellow/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-0 right-1/4 h-[500px] w-[500px] bg-brand-red/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 left-1/4 h-[500px] w-[500px] bg-brand-yellow/20 rounded-full blur-3xl pointer-events-none" />
 
       <div className="mx-auto max-w-7xl px-6 relative z-10">
         

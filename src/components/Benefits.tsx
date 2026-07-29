@@ -59,10 +59,10 @@ export default function Benefits() {
   ];
 
   return (
-    <section className="bg-[#FDFBFC] py-24 lg:py-32 relative overflow-hidden border-y border-slate-100/75" id="beneficios">
+    <section className="bg-gradient-to-b from-brand-red-light/30 via-brand-yellow-light/50 to-amber-50/30 py-24 lg:py-32 relative overflow-hidden border-y border-rose-100/60" id="beneficios">
       {/* Decorative background radial glows */}
-      <div className="absolute top-0 right-1/4 h-96 w-96 bg-brand-red/5 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-0 left-1/4 h-96 w-96 bg-brand-yellow/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-0 right-1/4 h-[500px] w-[500px] bg-brand-red/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 left-1/4 h-[500px] w-[500px] bg-brand-yellow/20 rounded-full blur-3xl pointer-events-none" />
 
       <div className="mx-auto max-w-7xl px-6 relative z-10">
         

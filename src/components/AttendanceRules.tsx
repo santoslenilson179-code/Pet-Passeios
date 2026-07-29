@@ -44,10 +44,10 @@ export default function AttendanceRules() {
   ];
 
   return (
-    <section className="bg-[#FAF7F8] py-20 lg:py-28 relative overflow-hidden border-b border-slate-100" id="regras">
+    <section className="bg-gradient-to-b from-brand-red-light/40 via-amber-50/50 to-brand-yellow-light/50 py-20 lg:py-28 relative overflow-hidden border-b border-rose-100/60" id="regras">
       {/* Background ambient accents */}
-      <div className="absolute top-0 right-1/3 h-80 w-80 bg-brand-red/5 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-0 left-1/3 h-80 w-80 bg-brand-yellow/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-0 right-1/3 h-96 w-96 bg-brand-red/15 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 left-1/3 h-96 w-96 bg-brand-yellow/20 rounded-full blur-3xl pointer-events-none" />
 
       <div className="mx-auto max-w-4xl px-6 relative z-10">
         
