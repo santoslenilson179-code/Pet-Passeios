@@ -3,8 +3,10 @@ import { motion } from "motion/react";
 import { MessageSquare, ArrowDown, Check, Shield, Heart, Camera, Activity, Star } from "lucide-react";
 import { getWhatsAppLink } from "../data";
 
-// Premium generated image
-const heroImg = "/src/assets/images/three_small_dogs_playground_1783543357159.jpg";
+import heroImg from "../assets/images/google_maps_hero.jpg";
+import avatarShirley from "../assets/images/shirley_avatar_1783539602612.jpg";
+import avatarGisele from "../assets/images/gisele_avatar_1783539906789.jpg";
+import avatarMariaHelena from "../assets/images/maria_helena_avatar_1783540196665.jpg";
 
 interface HeroProps {
   onOpenModal: () => void;
@@ -126,17 +128,17 @@ export default function Hero({ onOpenModal }: HeroProps) {
               <div className="flex -space-x-2.5 shrink-0">
                 <img
                   className="inline-block h-10 w-10 rounded-full ring-2 ring-white object-cover shadow-sm"
-                  src="/src/assets/images/shirley_avatar_1783539602612.jpg"
+                  src={avatarShirley}
                   alt="Avatar Shirley"
                 />
                 <img
                   className="inline-block h-10 w-10 rounded-full ring-2 ring-white object-cover shadow-sm"
-                  src="/src/assets/images/gisele_avatar_1783539906789.jpg"
+                  src={avatarGisele}
                   alt="Avatar Gisele"
                 />
                 <img
                   className="inline-block h-10 w-10 rounded-full ring-2 ring-white object-cover shadow-sm"
-                  src="/src/assets/images/maria_helena_avatar_1783540196665.jpg"
+                  src={avatarMariaHelena}
                   alt="Avatar Maria Helena"
                 />
               </div>

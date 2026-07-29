@@ -2,11 +2,15 @@ import React from "react";
 import { motion } from "motion/react";
 import { Check } from "lucide-react";
 
+import imgPhoto2 from "../assets/images/google_maps_photo2.jpg";
+import imgPhoto3 from "../assets/images/google_maps_photo3.jpg";
+import imgPhoto4 from "../assets/images/google_maps_photo4.jpg";
+
 export default function Benefits() {
   const highlights = [
     {
       id: "playground",
-      image: "/src/assets/images/three_small_dogs_playground_1783543357159.jpg",
+      image: imgPhoto2,
       badge: "Lazer e Liberdade",
       title: "Parquinho Amplo & Recreativo",
       description: "Nossos hóspedes se divertem soltos em gramas e parquinhos sob medida. Um ambiente dinâmico projetado para o gasto saudável de energia e interação dócil.",
@@ -21,24 +25,8 @@ export default function Benefits() {
       borderColor: "border-brand-red-accent/20"
     },
     {
-      id: "pinscher-dome",
-      image: "/src/assets/images/pinscher_red_dome_1783543372424.jpg",
-      badge: "Estimulação Cognitiva",
-      title: "Estímulo Físico & Socialização Inteligente",
-      description: "Utilizamos equipamentos de agilidade adaptados e dinâmicas de comportamento canino coordenadas por profissionais experientes. Seu pet aprende a conviver de maneira dócil e equilibrada.",
-      bullets: [
-        "Circuitos de agilidade leves e divertidos",
-        "Enriquecimento ambiental cognitivo",
-        "Respeito ao temperamento individual"
-      ],
-      isEven: true,
-      accentColor: "brand-gold",
-      bgColor: "bg-brand-yellow-light/80",
-      borderColor: "border-brand-yellow-accent/40"
-    },
-    {
       id: "shihtzu-ballpit",
-      image: "/src/assets/images/shihtzu_ball_pit_1783543386395.jpg",
+      image: imgPhoto3,
       badge: "Sucesso entre os Pets",
       title: "Piscina de Bolinhas & Enriquecimento",
       description: "A famosa piscina de bolinhas é um sucesso absoluto! Ela estimula os sentidos sensoriais do cãozinho de maneira lúdica e super divertida, combatendo o estresse e a ansiedade de separação.",
@@ -46,6 +34,22 @@ export default function Benefits() {
         "Estímulo tátil e enriquecimento sensorial",
         "Momentos de muita descontração",
         "Higienização constante de todas as bolinhas"
+      ],
+      isEven: true,
+      accentColor: "brand-gold",
+      bgColor: "bg-brand-yellow-light/80",
+      borderColor: "border-brand-yellow-accent/40"
+    },
+    {
+      id: "socialization-space",
+      image: imgPhoto4,
+      badge: "Estimulação Cognitiva",
+      title: "Estímulo Físico & Socialização Guiada",
+      description: "Espaço amplo e acolhedor projetado para a convivência pacífica e saudável entre os cães. Dinâmicas de comportamento coordenadas por profissionais experientes.",
+      bullets: [
+        "Interação e socialização supervisionada",
+        "Enriquecimento ambiental e cognitivo",
+        "Respeito ao temperamento individual de cada pet"
       ],
       isEven: false,
       accentColor: "brand-red",

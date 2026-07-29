@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { X, ChevronLeft, ChevronRight, Camera, Search } from "lucide-react";
+import { X, ChevronLeft, ChevronRight, Camera, Search, Instagram, ExternalLink, Play, Sparkles } from "lucide-react";
 import { GALLERY_ITEMS } from "../data";
 
 export default function Gallery() {
@@ -30,7 +30,7 @@ export default function Gallery() {
 
   return (
     <section className="bg-white py-24 lg:py-32" id="galeria">
-      <div className="mx-auto max-w-7xl px-6 space-y-16 lg:space-y-24">
+      <div className="mx-auto max-w-7xl px-6 space-y-16 lg:space-y-20">
         
         {/* Header Title */}
         <div className="space-y-4 max-w-3xl mx-auto text-center">
@@ -44,6 +44,68 @@ export default function Gallery() {
             Dê uma espiadinha no dia a dia da nossa creche e hospedagem. Cães pequenos correndo livres, socializando com segurança e recebendo carinho abundante.
           </p>
         </div>
+
+        {/* Featured Instagram Reel Card */}
+        <motion.div
+          initial={{ opacity: 0, y: 25 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900 rounded-[2.5rem] p-6 sm:p-10 border border-slate-800 shadow-2xl relative overflow-hidden text-white max-w-4xl mx-auto"
+        >
+          {/* Subtle background glow */}
+          <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-pink-500/10 via-purple-500/10 to-transparent rounded-full blur-3xl pointer-events-none" />
+          
+          <div className="flex flex-col md:flex-row items-center gap-8 lg:gap-12 relative z-10">
+            {/* Reel Embed Player Container */}
+            <div className="w-full md:w-[340px] shrink-0 flex flex-col items-center">
+              <div className="relative w-full max-w-[320px] aspect-[9/16] bg-slate-900 rounded-[2rem] overflow-hidden border-4 border-slate-700/60 shadow-2xl group">
+                <iframe
+                  src="https://www.instagram.com/reel/DZgOiS8ts67/embed"
+                  title="Instagram Reel Pet Passeio"
+                  className="w-full h-full border-0 rounded-[1.8rem]"
+                  allowTransparency={true}
+                  allow="encrypted-media"
+                />
+              </div>
+            </div>
+
+            {/* Reel Details & Direct Link */}
+            <div className="flex-1 space-y-6 text-center md:text-left">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gradient-to-r from-purple-500/20 via-pink-500/20 to-orange-500/20 border border-pink-500/30 text-pink-300 text-xs font-extrabold uppercase tracking-wider">
+                <Instagram size={15} className="text-pink-400" />
+                <span>Reel em Destaque no Instagram</span>
+              </div>
+
+              <div className="space-y-3">
+                <h3 className="font-display text-2xl sm:text-3xl font-black text-white leading-tight">
+                  Vídeo Oficial no @petpasseiooficial 🐾
+                </h3>
+                <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
+                  Confira a rotina alegre, o cuidado afetuoso e as brincadeiras supervisionadas dos cãozinhos na creche e hospedagem do Pet Passeio!
+                </p>
+              </div>
+
+              <div className="pt-2 flex flex-col sm:flex-row items-center gap-4">
+                <a
+                  href="https://www.instagram.com/petpasseiooficial/reel/DZgOiS8ts67/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-6 py-4 rounded-2xl bg-gradient-to-r from-pink-600 via-purple-600 to-indigo-600 hover:from-pink-500 hover:via-purple-500 hover:to-indigo-500 text-white font-extrabold text-sm shadow-lg shadow-purple-900/40 hover:shadow-purple-900/60 transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]"
+                >
+                  <Instagram size={18} />
+                  <span>Ver Reel no Instagram</span>
+                  <ExternalLink size={16} className="opacity-80" />
+                </a>
+
+                <span className="text-xs font-semibold text-slate-400 flex items-center gap-1.5">
+                  <Sparkles size={14} className="text-yellow-400" />
+                  Siga @petpasseiooficial
+                </span>
+              </div>
+            </div>
+          </div>
+        </motion.div>
 
         {/* Gallery Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

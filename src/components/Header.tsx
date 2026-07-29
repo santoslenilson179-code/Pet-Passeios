@@ -15,8 +15,8 @@ export default function Header({ onOpenModal }: HeaderProps) {
     { name: "Benefícios", href: "#beneficios" },
     { name: "Planos & Preços", href: "#planos-creche" },
     { name: "Regras", href: "#regras" },
-    { name: "Galeria", href: "#galeria" },
     { name: "Depoimentos", href: "#depoimentos" },
+    { name: "Instagram", href: "#instagram" },
     { name: "Localização", href: "#localizacao" },
     { name: "Perguntas Frequentes", href: "#faq" }
   ];

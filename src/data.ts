@@ -1,5 +1,16 @@
 import { Benefit, Step, Service, Testimonial, FAQItem, GalleryItem } from "./types";
 
+import avatarShirley from "./assets/images/shirley_avatar_1783539602612.jpg";
+import avatarGisele from "./assets/images/gisele_avatar_1783539906789.jpg";
+import avatarMariaHelena from "./assets/images/maria_helena_avatar_1783540196665.jpg";
+
+import photo4 from "./assets/images/google_maps_photo4.jpg";
+import photo5 from "./assets/images/google_maps_photo5.jpg";
+import photo6 from "./assets/images/google_maps_photo6.jpg";
+import photoHero from "./assets/images/google_maps_hero.jpg";
+import photo2 from "./assets/images/google_maps_photo2.jpg";
+import photo3 from "./assets/images/google_maps_photo3.jpg";
+
 export const BENEFITS: Benefit[] = [
   {
     id: "seguros",
@@ -162,7 +173,7 @@ export const TESTIMONIALS: Testimonial[] = [
     petBreed: "Clientes há 10 anos",
     comment: "Ja levamos nossos Pets na Pet Passeio a 10 anos, elas realmente amam os Pets, tratam com muita dedicacao e carinho, local muito limpo, trocam agua varias vezes ao dia e nesses dias quentes colocam gelo nas aguas. Sao Excelentes🥰",
     rating: 5,
-    avatarUrl: "/src/assets/images/shirley_avatar_1783539602612.jpg",
+    avatarUrl: avatarShirley,
     ownerReply: "Agradecemos a confiança e respeito de sempre. É muito prazeroso cuidar deles. Cada um com seu jeitinho ❤️"
   },
   {
@@ -172,7 +183,7 @@ export const TESTIMONIALS: Testimonial[] = [
     petBreed: "Hospedados desde bebês",
     comment: "Nossos dois pets ficam hospedados com as tias Helo e Ane desde bebês. É como se estivessem conosco em casa. Só gratidão pelo cuidado",
     rating: 5,
-    avatarUrl: "/src/assets/images/gisele_avatar_1783539906789.jpg",
+    avatarUrl: avatarGisele,
     ownerReply: "Agradecemos a confiança de sempre. São muito especiais pra nós ❤️"
   },
   {
@@ -182,7 +193,7 @@ export const TESTIMONIALS: Testimonial[] = [
     petBreed: "Chihuahua - Frequenta há 5 anos",
     comment: "Meu chiuaua Pingo frequenta a Pet Passeio desde os 6 meses,e já tem 5 anos que vai 3 tardes para brincar e socializar!! Ele adora!! As queridas donas Heloísa e Anne amam animais! São amorosas,queridas e muito cuidadosas e responsáveis !!",
     rating: 5,
-    avatarUrl: "/src/assets/images/maria_helena_avatar_1783540196665.jpg",
+    avatarUrl: avatarMariaHelena,
     ownerReply: "Agradecemos o carinho e confiança de sempre. Ver o Pinguinho crescer e brincar conosco é muito gratificante. 🐶"
   },
   {
@@ -216,34 +227,34 @@ export const TESTIMONIALS: Testimonial[] = [
 
 export const GALLERY_ITEMS: GalleryItem[] = [
   {
-    id: "gal_playground_dogs",
-    url: "/src/assets/images/three_small_dogs_playground_1783543357159.jpg",
-    caption: "Nossos hóspedes se divertindo juntos em nosso playground adaptado"
+    id: "gal_maps_4",
+    url: photo4,
+    caption: "Diversão e brincadeiras ao ar livre no gramado do Pet Passeio"
   },
   {
-    id: "gal_pinscher_dome",
-    url: "/src/assets/images/pinscher_red_dome_1783543372424.jpg",
-    caption: "Atividades cognitivas e estimulação física com monitores experientes"
+    id: "gal_maps_5",
+    url: photo5,
+    caption: "Cuidado e carinho em nosso espaço acolhedor e seguro"
   },
   {
-    id: "gal_shihtzu_ballpit",
-    url: "/src/assets/images/shihtzu_ball_pit_1783543386395.jpg",
-    caption: "A famosa piscina de bolinhas que os cãezinhos pequenos amam"
+    id: "gal_maps_6",
+    url: photo6,
+    caption: "Muitos sorrisos e momentos felizes na nossa creche e hospedagem"
   },
   {
-    id: "gal2",
-    url: "https://images.unsplash.com/photo-1534361960057-19889db9621e?auto=format&fit=crop&q=80&w=600",
-    caption: "Socialização monitorada correndo e brincando no gramado"
+    id: "gal_maps_hero",
+    url: photoHero,
+    caption: "Espaço amplo e aconchegante para socialização dos pets"
   },
   {
-    id: "gal3",
-    url: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&q=80&w=600",
-    caption: "Soneca gostosa no nosso espaço climatizado"
+    id: "gal_maps_2",
+    url: photo2,
+    caption: "Momentos especiais e brincadeiras supervisionadas pela equipe"
   },
   {
-    id: "gal4",
-    url: "https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&q=80&w=600",
-    caption: "Atenção individualizada e carinho para todas as raças"
+    id: "gal_maps_3",
+    url: photo3,
+    caption: "Alegria contagiante e amizades diárias na creche Pet Passeio"
   }
 ];
 

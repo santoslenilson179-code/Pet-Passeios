@@ -105,11 +105,11 @@ export default function Footer() {
           
           <div className="flex gap-3">
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/petpasseiooficial/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex h-9 w-9 items-center justify-center rounded-xl bg-slate-800 text-slate-300 hover:bg-brand-red hover:text-white transition-colors"
-              aria-label="Instagram"
+              aria-label="Instagram @petpasseiooficial"
             >
               <Instagram size={16} />
             </a>

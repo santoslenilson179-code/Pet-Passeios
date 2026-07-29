@@ -15,7 +15,7 @@ import Benefits from "./components/Benefits";
 import CrechePricing from "./components/CrechePricing";
 import AttendanceRules from "./components/AttendanceRules";
 import Testimonials from "./components/Testimonials";
-import Gallery from "./components/Gallery";
+import InstagramSection from "./components/InstagramSection";
 import LocationAndHours from "./components/LocationAndHours";
 import FAQ from "./components/FAQ";
 import CTAFinal from "./components/CTAFinal";
@@ -67,9 +67,9 @@ export default function App() {
         
         <AttendanceRules />
         
-        <Gallery />
-        
         <Testimonials />
+        
+        <InstagramSection />
         
         <LocationAndHours />
         
