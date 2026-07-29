@@ -1,0 +1,6 @@
+{
+  "name": "Pet Passeios",
+  "description": "Landing page premium, moderna e altamente persuasiva para Hotel e Creche de pets (Hotelaria e Daycare).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
