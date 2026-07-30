@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 import { MessageSquare, ArrowDown, Check, Shield, Heart, Camera, Activity, Star } from "lucide-react";
 import { getWhatsAppLink } from "../data";
 
-import heroImg from "../assets/images/google_maps_hero.jpg";
+import heroImg from "../assets/images/hero_reel_dvt.jpg";
 import avatarShirley from "../assets/images/shirley_avatar_1783539602612.jpg";
 import avatarGisele from "../assets/images/gisele_avatar_1783539906789.jpg";
 import avatarMariaHelena from "../assets/images/maria_helena_avatar_1783540196665.jpg";
@@ -15,10 +15,10 @@ interface HeroProps {
 export default function Hero({ onOpenModal }: HeroProps) {
   // Premium, matching red/yellow floating badges
   const floatingBadges = [
-    { text: "Hospedagem 100% Segura", icon: Shield, color: "text-brand-red bg-brand-red-light border border-brand-red-accent/30", position: "top-10 -left-6 md:-left-12" },
-    { text: "Vídeos e Fotos Diários", icon: Camera, color: "text-brand-gold bg-brand-yellow-light/95 border border-brand-yellow-accent/40", position: "bottom-32 -left-4 md:-left-8" },
-    { text: "100% Livre de Gaiolas", icon: Heart, color: "text-brand-red bg-brand-red-light border border-brand-red-accent/30", position: "top-24 -right-6 md:-right-12" },
-    { text: "Socialização Inteligente", icon: Activity, color: "text-brand-gold bg-brand-yellow-light border border-brand-yellow-accent/40", position: "bottom-16 -right-4 md:-right-8" }
+    { text: "Hospedagem 100% Segura", icon: Shield, color: "text-brand-red bg-brand-red-light border border-brand-red-accent/30", position: "top-6 -left-3 md:-left-10" },
+    { text: "100% Livre de Gaiolas", icon: Heart, color: "text-brand-red bg-brand-red-light border border-brand-red-accent/30", position: "top-24 -right-3 md:-right-10" },
+    { text: "Vídeos e Fotos Diários", icon: Camera, color: "text-brand-gold bg-brand-yellow-light/95 border border-brand-yellow-accent/40", position: "bottom-28 -left-3 md:-left-8" },
+    { text: "Socialização Inteligente", icon: Activity, color: "text-brand-gold bg-brand-yellow-light border border-brand-yellow-accent/40", position: "bottom-10 -right-3 md:-right-8" }
   ];
 
   return (
@@ -128,19 +128,31 @@ export default function Hero({ onOpenModal }: HeroProps) {
             >
               <div className="flex -space-x-2.5 shrink-0">
                 <img
-                  className="inline-block h-10 w-10 rounded-full ring-2 ring-white object-cover shadow-sm"
+                  className="inline-block h-10 w-10 rounded-full ring-2 ring-white object-cover shadow-sm bg-rose-100"
                   src={avatarShirley}
-                  alt="Avatar Shirley"
+                  alt="Shirley M. - Cliente Pet Passeio"
+                  referrerPolicy="no-referrer"
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=200";
+                  }}
                 />
                 <img
-                  className="inline-block h-10 w-10 rounded-full ring-2 ring-white object-cover shadow-sm"
+                  className="inline-block h-10 w-10 rounded-full ring-2 ring-white object-cover shadow-sm bg-rose-100"
                   src={avatarGisele}
-                  alt="Avatar Gisele"
+                  alt="Gisele P. - Cliente Pet Passeio"
+                  referrerPolicy="no-referrer"
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=200";
+                  }}
                 />
                 <img
-                  className="inline-block h-10 w-10 rounded-full ring-2 ring-white object-cover shadow-sm"
+                  className="inline-block h-10 w-10 rounded-full ring-2 ring-white object-cover shadow-sm bg-rose-100"
                   src={avatarMariaHelena}
-                  alt="Avatar Maria Helena"
+                  alt="Maria Helena - Cliente Pet Passeio"
+                  referrerPolicy="no-referrer"
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=200";
+                  }}
                 />
               </div>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-medium">
@@ -152,26 +164,29 @@ export default function Hero({ onOpenModal }: HeroProps) {
 
           {/* Right Side: Media Frame & Overlaid Context */}
           <div className="lg:col-span-5 mt-8 lg:mt-0 relative flex justify-center">
-            <div className="relative w-full max-w-md sm:max-w-lg lg:max-w-none">
+            <div className="relative w-full max-w-md sm:max-w-lg lg:max-w-none flex justify-center">
               
               {/* Background Glow */}
-              <div className="absolute inset-0 bg-brand-yellow/10 rounded-[2.5rem] rotate-2 scale-102 blur-lg -z-10" />
+              <div className="absolute inset-0 bg-brand-yellow/20 rounded-[2.5rem] rotate-2 scale-102 blur-lg -z-10" />
               
-              {/* Main Image Frame */}
+              {/* Main Image Frame from Instagram */}
               <motion.div
                 initial={{ opacity: 0, scale: 0.96 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.7 }}
-                className="overflow-hidden rounded-[2.5rem] bg-white p-2.5 shadow-2xl border border-slate-100/50 relative z-10 aspect-square object-cover"
+                className="overflow-hidden rounded-[2.5rem] bg-white p-2.5 shadow-2xl border border-slate-100/50 relative z-10 w-full max-w-md aspect-[3/4] object-cover"
               >
                 <img
                   src={heroImg}
-                  alt="Hóspedes caninos pequenos felizes no gramado do parquinho"
+                  alt="Hóspedes felizes no Pet Passeio"
                   className="h-full w-full object-cover rounded-[2rem]"
                   referrerPolicy="no-referrer"
                   loading="eager"
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&q=80&w=1000";
+                  }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/15 via-transparent to-transparent rounded-[2rem] pointer-events-none" />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/20 via-transparent to-transparent rounded-[2rem] pointer-events-none" />
               </motion.div>
 
               {/* Floating Glassmorphic Badges */}

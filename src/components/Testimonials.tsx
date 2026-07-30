@@ -99,8 +99,11 @@ export default function Testimonials() {
                   <img
                     src={testimonial.avatarUrl}
                     alt={testimonial.name}
-                    className="h-12 w-12 rounded-full object-cover border-2 border-white shadow-sm"
+                    className="h-12 w-12 rounded-full object-cover border-2 border-white shadow-sm bg-rose-100"
                     referrerPolicy="no-referrer"
+                    onError={(e) => {
+                      (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=200";
+                    }}
                   />
                   
                   {/* Profile detail */}

@@ -4,12 +4,13 @@ import { Check } from "lucide-react";
 
 import imgPhoto2 from "../assets/images/google_maps_photo2.jpg";
 import imgPhoto3 from "../assets/images/google_maps_photo3.jpg";
-import imgPhoto4 from "../assets/images/google_maps_photo4.jpg";
+import imgPhoto4 from "../assets/images/ig_photo_dyzi.jpg";
 
 export default function Benefits() {
   const highlights = [
     {
       id: "playground",
+      reelUrl: "https://www.instagram.com/reel/Da05vEDNMsf/embed",
       image: imgPhoto2,
       badge: "Lazer e Liberdade",
       title: "Parquinho Amplo & Recreativo",
@@ -26,6 +27,7 @@ export default function Benefits() {
     },
     {
       id: "shihtzu-ballpit",
+      reelUrl: "https://www.instagram.com/reel/DSyKjPtjRod/embed",
       image: imgPhoto3,
       badge: "Sucesso entre os Pets",
       title: "Piscina de Bolinhas & Enriquecimento",
@@ -88,31 +90,52 @@ export default function Benefits() {
                 key={item.id}
                 className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center"
               >
-                {/* Image block */}
+                {/* Media / Image block */}
                 <div className={`lg:col-span-6 relative flex justify-center ${
                   isEven ? "lg:order-first" : "lg:order-last"
                 }`}>
-                  <div className="relative w-full max-w-md sm:max-w-lg lg:max-w-none">
+                  <div className="relative w-full max-w-md sm:max-w-lg lg:max-w-none flex justify-center">
                     {/* Shadow rotation accent */}
                     <div className={`absolute inset-0 rounded-[2.5rem] rotate-2 scale-102 blur-md -z-10 ${
-                      isEven ? "bg-brand-yellow/10" : "bg-brand-red/5"
+                      isEven ? "bg-brand-yellow/10" : "bg-brand-red/10"
                     }`} />
                     
-                    {/* Image Frame */}
-                    <motion.div
-                      initial={{ opacity: 0, scale: 0.96 }}
-                      whileInView={{ opacity: 1, scale: 1 }}
-                      viewport={{ once: true, margin: "-100px" }}
-                      transition={{ duration: 0.6 }}
-                      className="overflow-hidden rounded-[2.5rem] bg-white p-2.5 shadow-xl border border-slate-100 relative z-10 aspect-square"
-                    >
-                      <img
-                        src={item.image}
-                        alt={item.title}
-                        className="h-full w-full object-cover rounded-[2rem] hover:scale-103 transition-transform duration-700"
-                        referrerPolicy="no-referrer"
-                      />
-                    </motion.div>
+                    {/* Media Frame */}
+                    {item.reelUrl ? (
+                      <motion.div
+                        initial={{ opacity: 0, scale: 0.96 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        viewport={{ once: true, margin: "-100px" }}
+                        transition={{ duration: 0.6 }}
+                        className="overflow-hidden rounded-[2.5rem] bg-slate-900 p-2 shadow-2xl border border-slate-100 relative z-10 w-full max-w-[360px] aspect-[9/16]"
+                      >
+                        <iframe
+                          src={item.reelUrl}
+                          title={item.title}
+                          className="w-full h-full border-0 rounded-[2rem] bg-slate-900"
+                          allow="encrypted-media"
+                          allowTransparency={true}
+                        />
+                      </motion.div>
+                    ) : (
+                      <motion.div
+                        initial={{ opacity: 0, scale: 0.96 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        viewport={{ once: true, margin: "-100px" }}
+                        transition={{ duration: 0.6 }}
+                        className="overflow-hidden rounded-[2.5rem] bg-white p-2.5 shadow-xl border border-slate-100 relative z-10 aspect-square w-full"
+                      >
+                        <img
+                          src={item.image}
+                          alt={item.title}
+                          className="h-full w-full object-cover rounded-[2rem] hover:scale-103 transition-transform duration-700 bg-rose-50"
+                          referrerPolicy="no-referrer"
+                          onError={(e) => {
+                            (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&q=80&w=1000";
+                          }}
+                        />
+                      </motion.div>
+                    )}
                   </div>
                 </div>
 
